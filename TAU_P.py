@@ -1,5 +1,7 @@
+import numpy as np
+
 def TAU_P(X0,mu,rho,sigma,delta0,rlb,N):
-    import numpy as np
+    
 
     tau = np.empty([N, 1]); tau[:] = np.NAN
     S0 = delta0 + X0[0] + X0[1]

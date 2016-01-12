@@ -1,6 +1,8 @@
+import numpy as np
+from scipy.stats import norm
+
 def EFK_SRTSM(parameters, maturities, forwardrates, index):
-    import numpy as np
-    from scipy.stats import norm
+    
     forwardrates = forwardrates.T
     J = maturities
     T = forwardrates.shape[1]
